@@ -11,12 +11,23 @@ $(document).ready(function () {
   $(".govuk-button").click(function () {
     if ($('#SelectedOption-1').is(':checked')) {
 
-      window.location.href = 'save-my-progress/email.html';
+      window.location.href = 'skills-assessment/DYSAC/dysac';
 	  return false;
 
     } else if ($('#SelectedOption-2').is(':checked')) {
 
-      window.location.href = 'save-my-progress/reference.html';
+      window.location.href = 'skills-assessment/skills-health-check/homepage-completed#personal-skills';
+      return false;
+    }
+	  else if ($('#SelectedOption-3').is(':checked')) {
+
+      window.location.href = 'skills-assessment/skills-health-check/homepage-completed#activity-skills';
+      return false;
+    }
+	  
+	  else if ($('#SelectedOption-4').is(':checked')) {
+
+      window.location.href = '#';
       return false;
     }
 

@@ -639,7 +639,6 @@ section.PROD_icon-buttons {
 
 
 
-
 //CUSTOM MESSAGES
 
 .banner-destructive-without-action, .banner-destructive-with-action, .banner-warning-with-action, .banner-warning-without-action, .banner-success-with-action, .banner-success-without-action, .banner-information-with-action, .banner-information-without-action, .banner-temporary-message-without-action {
@@ -669,9 +668,9 @@ section.PROD_icon-buttons {
     margin-top: 5px;
 			
 			li {
-    margin-bottom: 5px;
-}
-}
+    			margin-bottom: 5px;
+			}
+		}
 	}
 	
 	@media (min-width: 641px) {
