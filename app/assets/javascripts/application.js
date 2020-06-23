@@ -32,6 +32,22 @@ $(document).ready(function () {
     }
 
   });
+$("#downloadReport").click(function () {
+	
+    if ($('#DownloadType-pdf').is(':checked')) { 
+
+		window.open('/public/images/Skills-Health Check-UR-Example-As-Is-2assessments-completed-PDF-Report.pdf', '_blank');
+	  return false;
+
+    } else if ($('#DownloadType-doc').is(':checked')) {
+
+      window.location.href = '/public/images/Skills-Health Check-UR-Example-As-Is-2assessments-completed-PDF-Report.docx';
+													   
+      return false;
+    }
+	  
+
+  });
 
 })
 

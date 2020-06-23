@@ -12,9 +12,7 @@ Skills health check
 {% include "includes/beta-banner.html" %}
 
 <div class="govuk-width-container">
-		<div class="account-info">
-			<a class="account-link" href="signin" id="signin-link">Sign in</a>
-		</div>
+		
 	
 	
 	
@@ -147,7 +145,7 @@ Skills health check
               <p>No assessments have been started.</p>
             </section>
             <section id="3">
-              <h2 class="heading-large">3. Completed</h2>
+              <h2 class="heading-large" id="completed">3. Completed</h2>
 				<table id="" role="presentation" wiid="C350">
                 <thead wiid="C351">
                   <tr wiid="C352">
@@ -188,14 +186,16 @@ Skills health check
                 <fieldset>
                   <h3 class="heading-medium"> Choose your document
                     type </h3>
-                  <div class="form-group">
+                  
+					
+					<div class="form-group">
                     <legend class="visuallyhidden"> Choose your
                     document type </legend>
                     <label class="block-label selected">
-                      <input checked="checked" data-val="true" data-val-required="The DownloadType field is required." id="DownloadType" name="DownloadType" type="radio" value="Pdf">
+                      <input checked="checked" data-val="true" data-val-required="The DownloadType field is required." id="DownloadType-pdf" name="DownloadType" type="radio" value="Pdf">
                       PDF </label>
                     <label class="block-label">
-                      <input id="DownloadType" name="DownloadType" type="radio" value="Word">
+                      <input id="DownloadType-doc" name="DownloadType" type="radio" value="Word">
                       Microsoft Word
                       document </label>
                   </div>
@@ -205,7 +205,7 @@ Skills health check
                 <p> This downloads a document to your device (up to 200kb) which may take a few minutes. Data plan charges may apply. </p>
                 <p> You'll be able to download your report once you've completed at least one assessment. </p>
                 <div class="form-group">
-                  <input class="button" type="submit" value="Download your report">
+                  <input class="button" type="submit" id="downloadReport" value="Download your report">
                 </div>
               </section>
               <input data-val="true" data-val-required="The SkillsAssessmentComplete field is required." id="skillsAssessmentComplete" name="SkillsAssessmentComplete" type="hidden" value="False">
